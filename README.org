@@ -6,6 +6,7 @@ to help you complete symbols in a Scala REPL.
 So far it supports completion of members on objects.
 
 * Still TODO
+ - [X] support completion of class members;
  - [ ] support completion of symbols in the environment;
  - [ ] support completion of packages;
 
@@ -18,3 +19,7 @@ When this package is ready I'd like to contribute it to ELPA.  Please
 be aware that if I'm successful at getting it into ELPA then any
 significant contributions will require that you sign papers with the
 FSF.
+
+* Known Problems
+ - [ ] Trying to define a class can bomb out the heuristic to detect
+   the end of input from the Scala process
