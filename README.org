@@ -1,0 +1,20 @@
+* Introduction
+=scala-rc= is a minor mode which adds a =completion-at-point= function
+to help you complete symbols in a Scala REPL.
+
+* Progress
+So far it supports completion of members on objects.
+
+* Still TODO
+ - [ ] support completion of symbols in the environment;
+ - [ ] support completion of packages;
+
+* Ideas
+I'm open to ideas :)  This is a relatively new project and it could go
+in many directions at this point.
+
+* Contributing
+When this package is ready I'd like to contribute it to ELPA.  Please
+be aware that if I'm successful at getting it into ELPA then any
+significant contributions will require that you sign papers with the
+FSF.
