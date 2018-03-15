@@ -114,7 +114,7 @@ Signal done when the process tells us so."
 
 (defun scala-rc-class-members (class)
   "Produce the members of CLASS."
-  (let* ((cleaned (substring class (cl-position ?. class :from-end)))
+  (let* ((cleaned (substring class 0 (cl-position ?. class :from-end t)))
          (command (format scala-rc-get-completions-scala-source-string
                           cleaned)))
     (mapcar (lambda (option) (concat cleaned "." option))
